@@ -6,11 +6,37 @@
     <title>URL Shortener</title>
 </head>
 <body>
-    <h2>Enter the URl to be Short</h2>
+    
     <form method="post" action="/shorten">
-        <label for="long_url">Enter the URL</label>
+        <h2>URl Shortener</h2>
+        <label for="long_url">Enter The URL</label>
         <input type="text" id="long_url" name="long_url" required>
         <button type="submit">Shorten</button>
     </form>
 </body>
+<style>
+    body{
+        background-color: antiquewhite;
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        text-align: center;       
+    }
+    input{
+        margin-left: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px black;
+        border-radius: 5px;
+    }
+    button{
+        margin-left: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: black;
+        box-shadow: 4px 4px 5px black;
+    }
+</style>
 </html>
