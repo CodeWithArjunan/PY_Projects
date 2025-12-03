@@ -1,0 +1,165 @@
+.tutorial-container {
+    min-height: 100vh;
+    background: #f4f6fb;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Video Card */
+.video-card {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.video-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.video-frame {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* Button */
+.complete-btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 60px;
+    background: #2f61ea;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.complete-btn:hover {
+    background: #244fcc;
+    transform: translateY(-2px);
+}
+
+/* Levels List */
+.levels-card {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.levels-card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.level-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.unlocked {
+    background: #e8f0ff;
+    border-left: 5px solid #2f61ea;
+}
+
+.locked {
+    background: #f0f0f0;
+    border-left: 5px solid #999;
+    opacity: 0.6;
+}
+
+.status {
+    font-weight: 600;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-top: 1px solid #d1d5db;
+  box-shadow: 0-2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.bottom-btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+/* Individual Button Colors */
+.btn-home {
+  background-color: #3b82f6;
+}
+.btn-home:hover {
+  background-color: #2563eb;
+}
+
+.btn-tutorial {
+  background-color: #10b981;
+}
+.btn-tutorial:hover {
+  background-color: #059669;
+}
+
+.btn-chat {
+  background-color: #f59e0b;
+}
+.btn-chat:hover {
+  background-color: #d97706;
+}
+
+.btn-dashport {
+  background-color: #8b5cf6;
+}
+.btn-dashport:hover {
+  background-color: #7c3aed;
+}

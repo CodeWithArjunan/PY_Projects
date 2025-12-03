@@ -1,0 +1,150 @@
+/* ------------------------------
+   GENERAL PAGE LAYOUT
+--------------------------------*/
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ------------------------------
+   SEARCH BAR (TOP)
+--------------------------------*/
+.search-container {
+  padding: 16px;
+  background-color: #f3f4f6;
+}
+
+.search-input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px #93c5fd;
+}
+
+/* ------------------------------
+   MIDDLE NEWS / CARDS
+--------------------------------*/
+.news-section {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  padding-bottom: 90px;
+}
+
+.news-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* GRID LAYOUT */
+.news-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* NEWS CARD */
+.news-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: white;
+}
+
+.news-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.news-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.news-card-text {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* ------------------------------
+   BOTTOM NAVIGATION BUTTONS
+--------------------------------*/
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-top: 1px solid #d1d5db;
+  box-shadow: 0-2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.bottom-btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+/* Individual Button Colors */
+.btn-home {
+  background-color: #3b82f6;
+}
+.btn-home:hover {
+  background-color: #2563eb;
+}
+
+.btn-tutorial {
+  background-color: #10b981;
+}
+.btn-tutorial:hover {
+  background-color: #059669;
+}
+
+.btn-chat {
+  background-color: #f59e0b;
+}
+.btn-chat:hover {
+  background-color: #d97706;
+}
+
+.btn-dashport {
+  background-color: #8b5cf6;
+}
+.btn-dashport:hover {
+  background-color: #7c3aed;
+}

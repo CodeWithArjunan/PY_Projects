@@ -1,0 +1,86 @@
+.ai-container {
+    min-height: 100vh;
+    background: #f4f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.ai-box {
+    width: 100%;
+    max-width: 550px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.card {
+    background: #fafafa;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 22px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.main-career {
+    border-left: 5px solid #2f61ea;
+}
+
+.career-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.accuracy {
+    font-size: 16px;
+}
+
+.career-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.career-list li {
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.continue-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    background: #2f61ea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.continue-btn:hover {
+    background: #244fcc;
+}
